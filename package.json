@@ -1,0 +1,22 @@
+{
+  "name": "nodejstraininginexpree",
+  "version": "1.0.0",
+  "description": "this is Nodejs Training for Freshers to Experience",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test",
+    "build" : "npm install",
+    "start" : "node server.js"  
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firdousalam/NodejsTrainingInExpree.git"
+  },
+  "author": "Technophile Firdous",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firdousalam/NodejsTrainingInExpree/issues"
+  },
+  "homepage": "https://github.com/firdousalam/NodejsTrainingInExpree#readme"
+}
