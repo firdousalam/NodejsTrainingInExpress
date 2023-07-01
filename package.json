@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "node test",
-    "build" : "npm install",
-    "start" : "node server.js"
+    "build": "npm install",
+    "start": "node server.js",
+    "run" : "node server.js"
   },
   "repository": {
     "type": "git",
