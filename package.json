@@ -62,11 +62,10 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node test",
-    "build" : "npm install",
-    "start" : "node server.js"
+    "build": "npm install",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
