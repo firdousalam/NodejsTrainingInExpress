@@ -8,11 +8,27 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.post('/', (req, res) => {
+    // logic
+  res.send('Hello World!')
+})
+app.delete('/', (req, res) => {
+    // logic
+  res.send('Hello World!')
+})
 app.post('/post',(req,res)=>{
     // logic
    res.send("this is our post method")
 })
-
+app.get('/post',(req,res,next)=>{
+    // logic
+   //res.send("this is our post method")
+   next()
+})
+app.get('/post',(req,res)=>{
+    // logic
+   res.send("this is our 2nd post method")
+})
 app.delete('/delete',(req,res)=>{
     // logic
     res.send("this is our delete method")
@@ -21,6 +37,7 @@ app.delete('/delete',(req,res)=>{
  app.put('/put',(req,res)=>{
     res.send("this is our put method")
  })
+ app.use()
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
