@@ -6,6 +6,9 @@ const app = express()
 const port = 8001;
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+
+// in this page we will have only middleware and code to run server
+
 const mongoUrl = 'mongodb://TechnophileFirdous:Technophile123@ac-k5g9okb-shard-00-00.kzuwf7d.mongodb.net:27017,ac-k5g9okb-shard-00-01.kzuwf7d.mongodb.net:27017,ac-k5g9okb-shard-00-02.kzuwf7d.mongodb.net:27017/?ssl=true&replicaSet=atlas-xjy27e-shard-0&authSource=admin&retryWrites=true&w=majority';
 mongoose.connect(mongoUrl,
     {
@@ -48,6 +51,7 @@ app.get("/users",  (request, response) => {
 });
 /* API to get particular user in MongoDB */
 app.get('/user/:userId',function(req,res){
+  console.log("Data fro query",req.query.id)
     userModel.find({"_id":req.params.userId}).then((list)=>{
         res.send(list);
     }).catch((err)=>{
