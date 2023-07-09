@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node test",
     "build": "npm install",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug" : "node --inspect server.js"
   },
   "repository": {
     "type": "git",
