@@ -1,13 +1,10 @@
 const express = require('express');
-//const mongoose = require('mongoose');
-//const bodyParser = require('body-parser');
-//const userModel = require("./model/userSchema");
 const userRoute = require("./route/userRoute");
 const app = express()
 const port = 8001;
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.use("/userRoute",userRoute);
+app.use("/user",userRoute);
 
 /*
 // in this page we will have only middleware and code to run server
