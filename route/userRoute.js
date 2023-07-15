@@ -6,6 +6,7 @@ router.use((req, res, next) => {
    console.log("API Called ",new Date());
     //token autheticate
     // anythink
+   
     next()
 })
 router.post("/addUser",function(req,res){
