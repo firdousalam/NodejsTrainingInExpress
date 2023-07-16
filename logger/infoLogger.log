@@ -1,0 +1,85 @@
+{
+  message: 'addNewUser API started PID 5129865030 and Provided Data {"firstName":"Firdous"}',
+  level: 'info',
+  timestamp: '2023-07-16T06:22:43.572Z'
+}
+{
+  message: 'addNewUser API started PID 5129865030 and Validation Complete and it return {"status":false,"statusCode":403,"message":"First Name Cannot be Blank"}',
+  level: 'info',
+  timestamp: '2023-07-16T06:22:43.583Z'
+}
+{
+  message: 'addNewUser API started PID 5129865030 and Validation Unsuccessfull',
+  level: 'warn',
+  timestamp: '2023-07-16T06:22:43.588Z'
+}
+{
+  message: 'addNewUser API started PID 4554182738 and Provided Data {"firstName":"Test","lastName":"User","password":"123456","address":"address kolkata","emailId":"firdous.alam2058@203888@ggm.com","mobileNo":1234567890}',
+  level: 'info',
+  timestamp: '2023-07-16T06:28:09.507Z'
+}
+{
+  message: 'addNewUser API started PID 4554182738 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-16T06:28:09.533Z'
+}
+{
+  message: 'addNewUser API started PID 4554182738 and Validation Successfull',
+  level: 'info',
+  timestamp: '2023-07-16T06:28:09.544Z'
+}
+{
+  message: 'addNewUser API started PID 4554182738 and it Return Catch Error ReferenceError: hhh is not defined',
+  level: 'error',
+  timestamp: '2023-07-16T06:28:09.576Z'
+}
+{
+  message: 'addNewUser API started PID 1214151595 and Provided Data {"firstName":"Test","lastName":"User","password":"123456","address":"address kolkata","emailId":"firdous.alam2058@203888@ggm.com","mobileNo":1234567890}',
+  level: 'info',
+  timestamp: '2023-07-16T06:33:06.650Z'
+}
+{
+  message: 'addNewUser API started PID 1214151595 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-16T06:33:06.665Z'
+}
+{
+  message: 'addNewUser API started PID 1214151595 and Validation Successfull',
+  level: 'info',
+  timestamp: '2023-07-16T06:33:06.669Z'
+}
+{
+  message: 'addNewUser API started PID 2248320172 and Provided Data {"firstName":"","lastName":"User","password":"123456","address":"address kolkata","emailId":"firdous.alam2058@203888@ggm.com","mobileNo":1234567890}',
+  level: 'info',
+  timestamp: '2023-07-16T06:37:38.358Z'
+}
+{
+  message: 'addNewUser API started PID 2248320172 and Validation Complete and it return {"status":false,"statusCode":403,"message":"First Name Cannot be Blank"}',
+  level: 'info',
+  timestamp: '2023-07-16T06:37:38.373Z'
+}
+{
+  message: 'addNewUser API started PID 2248320172 and Validation Unsuccessfull',
+  level: 'warn',
+  timestamp: '2023-07-16T06:37:38.379Z'
+}
+{
+  message: 'addNewUser API started PID 1071348979 and Provided Data {"firstName":"Testing","lastName":"User","password":"123456","address":"address kolkata","emailId":"firdous.alam2058@203888@ggm.com","mobileNo":1234567890}',
+  level: 'info',
+  timestamp: '2023-07-16T06:38:25.612Z'
+}
+{
+  message: 'addNewUser API started PID 1071348979 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-16T06:38:25.619Z'
+}
+{
+  message: 'addNewUser API started PID 1071348979 and Validation Successfull',
+  level: 'info',
+  timestamp: '2023-07-16T06:38:25.626Z'
+}
+{
+  message: 'addNewUser API started PID 1071348979 and Validation Successfull',
+  level: 'info',
+  timestamp: '2023-07-16T06:38:25.720Z'
+}

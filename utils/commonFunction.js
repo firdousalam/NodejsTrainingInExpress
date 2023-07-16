@@ -48,6 +48,10 @@ const commonFunction = {
         }
 
         return returnString;
+    },
+    "generateRandonPID" : function(){
+        return Math.floor(Math.random() * 9000000000) + 1;
+
     }
 }
 module.exports = commonFunction;

@@ -1,0 +1,5 @@
+{
+  message: 'addNewUser API started PID 4554182738 and it Return Catch Error ReferenceError: hhh is not defined',
+  level: 'error',
+  timestamp: '2023-07-16T06:28:09.576Z'
+}
