@@ -1,6 +1,7 @@
-const CONSTANT = require("../utils/constant");
+const CONSTANT           = require("../utils/constant");
 const validationFunction = require("../validation/userValidation");
-
+const fs                 = require('fs-extra');
+var path                 = require("path");
 const commonFunction = {
     "userValidation" : function(body){
         let returnString = {"status" : true,"statusCode":"","message" : "success"}
@@ -52,6 +53,31 @@ const commonFunction = {
     "generateRandonPID" : function(){
         return Math.floor(Math.random() * 9000000000) + 1;
 
+    },
+    "cleanLoggerFile" : function(){
+        const errorLogFile =  path.resolve(__dirname, "../logger/errorLogger.log");
+        const infoLogFile =  path.resolve(__dirname, "../logger/infoLogger.log");
+        const warningLogFile =  path.resolve(__dirname, "../logger/warningLogger.log");
+       
+        fs.writeFile(errorLogFile, "", err => {
+            if (err) {
+              console.error(err);
+            }
+            console.log("error log has been cleaned")
+          });
+          fs.writeFile(infoLogFile, "", err => {
+            if (err) {
+              console.error(err);
+            }
+            console.log("infoLogFile has been cleaned")
+          });
+          fs.writeFile(warningLogFile, "", err => {
+            if (err) {
+              console.error(err);
+            }
+            // file written successfully
+            console.log("warningLogFile has been cleaned")
+          });
     }
 }
 module.exports = commonFunction;

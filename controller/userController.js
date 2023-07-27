@@ -14,6 +14,7 @@ const userController = {
         const validation = commonFunction.userValidation(req.body)
         logger.info(`addNewUser API started PID ${PID} and Validation Complete and it return `+JSON.stringify(validation));
         if(validation.status == true){// is validation successfull
+            // logical validation emailId or mobile no is already register or not
             logger.info(`addNewUser API started PID ${PID} and Validation Successfull`);
             let insertData = {
                                 "firstName" : req.body.firstName,
@@ -26,8 +27,6 @@ const userController = {
 
             console.log((req.body));
             const user = new userModel(insertData);
-        
-            
             //  it will be save on any page or database and we can see only this logs using splunk or any other tools
             try {
                 await user.save(); // save data inside users table 
