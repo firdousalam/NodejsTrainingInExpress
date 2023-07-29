@@ -1,0 +1,230 @@
+{
+  message: 'Login API started PID 8735935062 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:30:04.343Z'
+}
+{
+  message: 'Login API started PID 8735935062 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:30:04.364Z'
+}
+{
+  message: 'Login API started PID 1870908271 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:30:40.087Z'
+}
+{
+  message: 'Login API started PID 1870908271 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:30:40.113Z'
+}
+{
+  message: 'Login API started PID 3563106355 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:32:08.429Z'
+}
+{
+  message: 'Login API started PID 3563106355 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:32:08.455Z'
+}
+{
+  message: 'Login API started PID 1122264249 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:33:34.123Z'
+}
+{
+  message: 'Login API started PID 1122264249 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:33:34.151Z'
+}
+{
+  message: 'Login API started PID 5350234391 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:34:00.350Z'
+}
+{
+  message: 'Login API started PID 5350234391 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:34:00.370Z'
+}
+{
+  message: 'Login API started PID 6293834909 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:35:38.569Z'
+}
+{
+  message: 'Login API started PID 6293834909 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:35:38.589Z'
+}
+{
+  message: 'Login API started PID 8206408806 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:57:56.459Z'
+}
+{
+  message: 'Login API started PID 8206408806 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:57:56.464Z'
+}
+{
+  message: 'Login API started PID 361637460 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:58:32.456Z'
+}
+{
+  message: 'Login API started PID 361637460 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T07:58:32.470Z'
+}
+{
+  message: 'Login API started PID 582638721 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:00:34.801Z'
+}
+{
+  message: 'Login API started PID 582638721 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:00:34.814Z'
+}
+{
+  message: 'Login API started PID 4632333982 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:01:16.020Z'
+}
+{
+  message: 'Login API started PID 4632333982 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:01:16.048Z'
+}
+{
+  message: 'Login API started PID 4706478035 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:08:32.895Z'
+}
+{
+  message: 'Login API started PID 4706478035 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:08:32.913Z'
+}
+{
+  message: 'Login API started PID 1812743236 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:09:17.113Z'
+}
+{
+  message: 'Login API started PID 1812743236 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:09:17.126Z'
+}
+{
+  message: 'Login API started PID 7202162228 and Provided Data {"password":"1234567hhh","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:10:09.832Z'
+}
+{
+  message: 'Login API started PID 7202162228 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:10:09.845Z'
+}
+{
+  message: 'Login API started PID 6092590620 and Provided Data {"password":"1234567","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:10:17.379Z'
+}
+{
+  message: 'Login API started PID 6092590620 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:10:17.382Z'
+}
+{
+  message: 'Login API started PID 3374823604 and Provided Data {"password":"1234567","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:11:07.266Z'
+}
+{
+  message: 'Login API started PID 3374823604 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:11:07.282Z'
+}
+{
+  message: 'Login API started PID 1881546079 and Provided Data {"password":"123456","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:11:47.676Z'
+}
+{
+  message: 'Login API started PID 1881546079 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:11:47.678Z'
+}
+{
+  message: 'Login API started PID 4403709867 and Provided Data {"password":"123456","emailId":"firdous.alam2058@203888@ggm.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:01.666Z'
+}
+{
+  message: 'Login API started PID 4403709867 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:01.667Z'
+}
+{
+  message: 'addNewUser API started PID 8407066215 and Provided Data {"firstName":"Testing","lastName":"User","password":"123456","address":"address kolkata","emailId":"firdous.alam2058@203888@ggm1.com","mobileNo":1234567890}',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:33.512Z'
+}
+{
+  message: 'addNewUser API started PID 8407066215 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:33.515Z'
+}
+{
+  message: 'addNewUser API started PID 8407066215 and Validation Successfull',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:33.516Z'
+}
+{
+  message: 'addNewUser API started PID 8407066215 and Save User Successfull',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:33.762Z'
+}
+{
+  message: 'Login API started PID 2451281380 and Provided Data {"password":"123456","emailId":"firdous.alam2058@203888@ggm1.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:53.487Z'
+}
+{
+  message: 'Login API started PID 2451281380 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:12:53.488Z'
+}
+{
+  message: 'Login API started PID 2192034448 and Provided Data {"password":"123456","emailId":"firdous.alam2058@203888@ggm1.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:18:16.531Z'
+}
+{
+  message: 'Login API started PID 2192034448 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:18:16.543Z'
+}
+{
+  message: 'Login API started PID 4982534491 and Provided Data {"password":"123456","emailId":"firdous.alam2058@203888@ggm1.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:18:42.014Z'
+}
+{
+  message: 'Login API started PID 4982534491 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:18:42.031Z'
+}
+{
+  message: 'Login API started PID 993842040 and Provided Data {"password":"123456","emailId":"firdous.alam2058@203888@ggm1.com"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:19:15.929Z'
+}
+{
+  message: 'Login API started PID 993842040 and Validation Complete and it return {"status":true,"statusCode":"","message":"success"}',
+  level: 'info',
+  timestamp: '2023-07-29T08:19:15.938Z'
+}

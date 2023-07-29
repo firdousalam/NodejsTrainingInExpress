@@ -9,7 +9,13 @@ const constant = {
         "mobileNumberLength" : 10,
         "passwordMaxLength" : 20,
         "passwordMinLength"  : 8,
-        "blankCommonMessage" : "connot be blank"
+        "blankCommonMessage" : "connot be blank",
+        "blankEmailMessage" : "EmailId Connot be Blank",
+        "blankPasswordMessage" : "Please Provide Your Password",
+        "loginUserNotExist" : "User Do Not exist,Please Register",
+        "loginSuccess"      : "Login Success",
+        "blankData"         : "Please Provide Valid Data",
+        "passwordNotMatch"  : "Password Not Match"
     },
     responseMessage : {
         "userCreatedSuccess" : "User Created Successfully"
@@ -22,6 +28,7 @@ const constant = {
         "notExist" : 404,
         "error"    : 500,
         "validation" : 403
-    }
+    },
+    algorithm : 'RS256'
 }
 module.exports = constant;

@@ -1,5 +1,6 @@
 const express = require('express');
 const userRoute = require("./route/userRoute");
+const loginRoute = require("./route/loginRoute");
 const commonFunction = require("./utils/commonFunction")
 var CronJob = require('cron').CronJob;
 const app = express()
@@ -7,6 +8,7 @@ const port = 8001;
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use("/user",userRoute);
+app.use("/login",loginRoute);
 
 var job = new CronJob(
   '10 59 12 * * *',
