@@ -107,17 +107,19 @@ const commonFunction = {
       return returnString;
     },
     "encryptJWT" : function(data,callback){
-      console.log(data);
-      jwt.sign(data, secretKey, function(err, token) {
+     
+      jwt.sign(data, secretKey, {
+        "algorithm": CONSTANT.algorithm,
+        "expiresIn": CONSTANT.expireTime // expires in 24 hours
+      }, function(err, token) {
         callback(err,token);
       });
 
     },
-    "validateJWT" : function(data){
-      
-    },
-    "decryptJWT" : function(data){
-
+    "decryptJWT" : function(token,callback){
+      jwt.verify(token, secretKey, function(err, decoded) {
+        callback(err,decoded);
+      });
     }
 }
 module.exports = commonFunction;

@@ -29,6 +29,7 @@ const constant = {
         "error"    : 500,
         "validation" : 403
     },
-    algorithm : 'RS256'
+    algorithm : 'HS256',
+    expireTime: 86400
 }
 module.exports = constant;
