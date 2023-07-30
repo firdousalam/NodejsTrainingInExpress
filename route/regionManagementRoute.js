@@ -1,11 +1,12 @@
 const express = require('express')
 const router = express.Router()
-const adminController = require("../controller/adminController");
-const commonFunction = require("../utils/commonFunction");
-const CONSTANT = require("../utils/constant");
+const regionController = require("../controller/regionManagementController")
 // middleware that is specific to this router
 router.use((req, res, next) => {
    console.log("API Called ",new Date());
+   const commonFunction = require("../utils/commonFunction");
+   const CONSTANT = require("../utils/constant");
+   
    /*
    //token autheticate
   let authenticURL = ['/addAdmin','/getAdmins','/getParticularAdmin','/updateAdmin']
@@ -24,20 +25,19 @@ router.use((req, res, next) => {
      next()
    }
    */
-   next()
-})
-router.post("/addAdmin",function(req,res){
-   console.log("adding new admin ");
-   adminController.addAdmin(req,res);
-})
-router.get("/getAdmins",function(req,res){
-   adminController.getAdmins(req,res);
- })
- router.get("/getParticularAdmin/:adminId",function(req,res){
-   adminController.getParticularAdmin(req,res);
- })
- router.post("/updateAdmin/:adminId",function(req,res){
-   adminController.updateAdmin(req,res);
+    next()
 })
 
+ router.post("/addNewRegion",function(req,res){
+    regionController.addNewRegion(req,res);
+})
+router.get("/getAllRegion",function(req,res){
+    regionController.getRegion(req,res);
+ })
+ router.get("/getRegion/:regionId",function(req,res){
+    regionController.getParticularRegion(req,res);
+ })
+ router.post("/updateRegion/:regionId",function(req,res){
+    regionController.updateRegion(req,res);
+ })
 module.exports = router;

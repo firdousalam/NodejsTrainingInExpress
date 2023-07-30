@@ -1,36 +1,52 @@
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
+const CONSTANT  = require("../utils/constant");
+const bcrypt = require("bcryptjs")
 const UserSchema = new mongoose.Schema({
-  firstName: {   //no of character  , string only  , not special character, not blank
+  firstName: {
     type: String,
-    required : true
+    required : true,
+    trim : true
   },
-  lastName: {  //no of character  , string only  , not special character
-    type: String
+  lastName: {
+    type: String,
+    trim : true
   },
-  password : { // min length ,max length, cotain special charecter ,capital letter number,not blank
+  password : {
     type : String,
-    required : true
+    required : true,
+    trim : true
   },
-  address: [{ // not blank ,max charcater
-    type: String
-  }],
-  emailId: {  // not blank ,uniques,email patter
+  address: {
     type: String,
-    required:true,
-    unique:true
+    trim : true
   },
-  mobileNo: [{ type: Number }],  // should be number and not blank ,length
+  emailId: { 
+    type: String,
+    unique:true,
+    trim : true
+  },
+  mobileNo: { 
+    type: Number,
+    required:true,
+    unique:true 
+  },
+  status : {
+    type : String,
+    default : CONSTANT.applicationConstant.activeStatus,
+    enum    :  CONSTANT.applicationConstant.statusEnum
+  },
+  lastLogin: { type: Date, default: Date.now },
+  accountCreatedOn: { type: Date, default: Date.now },
   image : {
     type : String
-  }
+  },
+  otp : { type : String},
+  otpDateTime : {type : Date}
 });
 
-
-/// before save (colllecting Data)(pre) --next-- actual save/Modify - post--next---response
-// store procedure or simply trigger
 UserSchema.pre("save", function (next) {
   const user = this
+
   if (this.isModified("password") || this.isNew) {
     bcrypt.genSalt(10, function (saltError, salt) {
       if (saltError) {
@@ -40,7 +56,7 @@ UserSchema.pre("save", function (next) {
           if (hashError) {
             return next(hashError)
           }
-          user.password = hash 
+          user.password = hash
           next()
         })
       }
@@ -49,13 +65,16 @@ UserSchema.pre("save", function (next) {
     return next()
   }
 })
-UserSchema.methods.comparePassword = function(candidatePassword, cb) {
-  bcrypt.compare(candidatePassword, this.password, function(err, isMatch) {
-      if (err) return cb(err);
-      cb(null, isMatch);
-  });
-};
 
+UserSchema.methods.comparePassword = function(password, callback) {
+  bcrypt.compare(password, this.password, function(error, isMatch) {
+    if (error) {
+      return callback(error)
+    } else {
+      callback(null, isMatch)
+    }
+  })
+}
 
 const User = mongoose.model("User", UserSchema); // users
 module.exports = User;
