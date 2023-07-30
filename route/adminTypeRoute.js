@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const adminController = require("../controller/adminController");
+const adminTypeController = require("../controller/adminTypeController");
 const commonFunction = require("../utils/commonFunction");
 const CONSTANT = require("../utils/constant");
 // middleware that is specific to this router
@@ -8,7 +8,7 @@ router.use((req, res, next) => {
    console.log("API Called ",new Date());
    /*
    //token autheticate
-  let authenticURL = ['/addAdmin','/getAdmins','/getParticularAdmin','/updateAdmin']
+  let authenticURL = ['/getUsers','/getUser','/updateUser']
    if(authenticURL.includes(req.path))
    {
      let token = req.headers.authorization;
@@ -26,18 +26,18 @@ router.use((req, res, next) => {
    */
    next()
 })
-router.post("/addAdmin",function(req,res){
-   console.log("adding new admin ");
-   adminController.addAdmin(req,res);
+router.post("/addAdminType",function(req,res){
+   console.log("adding new admin type");
+   adminTypeController.addAdminType(req,res);
 })
-router.get("/getAdmins",function(req,res){
-   adminController.getAdmins(req,res);
+router.get("/getAdminType",function(req,res){
+   adminTypeController.getAdminType(req,res);
  })
- router.get("/getParticularAdmin/:adminId",function(req,res){
-   adminController.getParticularAdmin(req,res);
+ router.get("/getParticularAdminType/:adminTypeId",function(req,res){
+   adminTypeController.getParticularAdminType(req,res);
  })
- router.post("/updateAdmin/:adminId",function(req,res){
-   adminController.updateAdmin(req,res);
+ router.post("/updateAdminType/:adminTypeId",function(req,res){
+   adminTypeController.updateAdminType(req,res);
 })
 
 module.exports = router;
