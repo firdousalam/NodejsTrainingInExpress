@@ -4,6 +4,8 @@ const adminModel = require("../model/adminSchema");
 const adminTypeModel = require("../model/adminTypeSchema");
 const CONSTANT  = require("../utils/constant");
 const commonFunction = require("../utils/commonFunction");
+const SMS           = require("../utils/SMS")
+const EmailFun      = require("../utils/email");
 
 const loginController = {
     "userLogin" : async function(req,res){
@@ -111,9 +113,16 @@ const loginController = {
                     res.status(403).send(CONSTANT.validation.adminWithMobileNoOrEmailExist);
                 }else{
                     console.log(list[0]._id);
+                    if(req.body.type == CONSTANT.applicationConstant.emailType){
+                        // you should call email service and send OTP (updateData.otp)
+                        EmailFun.sendUserOTP(list[0].emailId,updateData.otp);
+                     }else{
+                        SMS.sendOTP(list[0].mobileNo,updateData.otp)
+                     }
+                    
                     userModel.findOneAndUpdate({"_id":list[0]._id},updateData)
                     .then((adminType)=>{
-                        res.send(updateData);
+                        res.send({"data" : {"message" : "OTP Send Successfully"},"OTP" : updateData.otp});
                     })
                 }
             })
@@ -141,10 +150,10 @@ const loginController = {
                     res.status(403).send(CONSTANT.validation.adminWithMobileNoOrEmailExist);
                 }else{
                     if(req.body.type == CONSTANT.applicationConstant.emailType){
-                       // you should call email service and send OTP (updateData.otp)
-                    }else{
-                        // you should call sms service and send OTP (updateData.otp)
-                    }
+                        EmailFun.sendAdminOTP(list[0].emailId,updateData.otp);
+                     }else{
+                        SMS.sendOTP(list[0].mobileNo,updateData.otp)
+                     }
                     console.log(list[0]._id);
                     adminModel.findOneAndUpdate({"_id":list[0]._id},updateData)
                     .then((adminType)=>{
