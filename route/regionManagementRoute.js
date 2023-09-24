@@ -34,6 +34,9 @@ router.use((req, res, next) => {
 router.get("/getAllRegion",function(req,res){
     regionController.getRegion(req,res);
  })
+ router.get("/getTestData",function(req,res){
+   regionController.getTestData(req,res);
+})
  router.get("/getRegion/:regionId",function(req,res){
     regionController.getParticularRegion(req,res);
  })

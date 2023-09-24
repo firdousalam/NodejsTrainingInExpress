@@ -3,6 +3,30 @@ const regionModel = require("../model/regionSchema");
 const validation = require("../validation/userValidation")
 const CONSTANT  = require("../utils/constant")
 const regionController = {
+    "getTestData" : function(req,res){
+        let responseJson  = [{
+        "id" : 1,
+        "userId" : 1,
+        "title" : "Data are from our custom API",
+        "body" : "Lorem Ipsum ID : 1"
+        },
+        {
+        "id" : 2,
+        "userId" : 1,
+        "title" : "Data are from our custom API",
+        "body" : "Lorem Ipsum ID : 2"
+        }
+        ,
+        {
+            "id" : 3,
+            "userId" : 1,
+            "title" : "Data are from our custom API",
+            "body" : "Lorem Ipsum  ID : 3"
+            }
+
+        ]
+        res.send(responseJson); 
+    },
     "addNewRegion" :  function(req,res){
         if(validation.blankCheck(req.body.region) 
             && validation.blankCheck(req.body.timeZone)

@@ -2,8 +2,21 @@ const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 require('dotenv').config();
 const fs = require('fs-extra');
-
+var cors = require('cors')
 const swaggerDocument = require('./swagger.json');
+const app = express()
+const whitelist = ["http://localhost:3000"]
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error("Not allowed by CORS"))
+    }
+  },
+  credentials: true,
+}
+app.use(cors(corsOptions))
 
 
 const accessRoute = require("./route/accessRoute");
@@ -16,7 +29,7 @@ const regionRoute = require("./route/regionManagementRoute");
 const userRoute = require("./route/userRoute");
 const walletRoute = require("./route/walletRoute");
 
-const app = express()
+
 const port = process.env.PORT;
 const environment = process.env.environment;
 
@@ -38,6 +51,7 @@ app.use("/region",regionRoute);
 app.use("/user",userRoute);
 app.use("/wallet",walletRoute);
 app.use("/login",loginRoute);
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

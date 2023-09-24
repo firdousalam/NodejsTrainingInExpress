@@ -6,8 +6,9 @@ router.use((req, res, next) => {
    console.log("API Called ",new Date());
     next()
 })
-router.post("/addUser",function(req,res){
+router.post("/addUser",function(req,res,next){
    userController.addNewUser(req,res);
+   next();
 })
 router.get("/getUsers",function(req,res){
     userController.getAllUser(req,res);

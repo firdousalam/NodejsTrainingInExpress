@@ -68,6 +68,7 @@ const userController = {
         })
     },
     "updateUser" : function(req,res){
+        
         let updateData = {
             "firstName" : req.body.firstName,
             "lastName" : req.body.lastName,
